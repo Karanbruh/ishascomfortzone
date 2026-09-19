@@ -1,0 +1,28 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1.25rem 2.75rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.exclusive {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--pink-soft);
+  margin-bottom: 0.35rem;
+}
+
+.version {
+  font-size: 0.85rem;
+  color: var(--lavender);
+  margin-bottom: 0.85rem;
+  opacity: 0.9;
+}
+
+.copy {
+  font-size: 0.75rem;
+  color: var(--lavender);
+  opacity: 0.55;
+}

@@ -1,0 +1,68 @@
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(90, 50, 120, 0.45), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 80%, rgba(180, 80, 120, 0.12), transparent 50%),
+    linear-gradient(180deg, #120a24 0%, #1a1035 40%, #0f0a1e 100%);
+}
+
+.glowPink {
+  position: absolute;
+  width: min(70vw, 420px);
+  height: min(70vw, 420px);
+  top: 8%;
+  right: -10%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(240, 160, 192, 0.22), transparent 70%);
+  filter: blur(8px);
+}
+
+.glowLavender {
+  position: absolute;
+  width: min(60vw, 360px);
+  height: min(60vw, 360px);
+  bottom: 15%;
+  left: -12%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(160, 130, 220, 0.18), transparent 70%);
+  filter: blur(10px);
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--cream);
+  box-shadow: 0 0 6px rgba(247, 239, 227, 0.6);
+  animation: twinkle ease-in-out infinite;
+}
+
+.brighter .star {
+  box-shadow: 0 0 10px rgba(248, 212, 232, 0.9);
+  opacity: 1 !important;
+}
+
+.brighter .glowPink {
+  background: radial-gradient(circle, rgba(240, 160, 192, 0.38), transparent 70%);
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star {
+    animation: none;
+  }
+}

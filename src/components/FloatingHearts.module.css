@@ -1,0 +1,47 @@
+.layer {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  bottom: -2rem;
+  animation: floatUp ease-out forwards;
+  opacity: 0;
+  filter: drop-shadow(0 4px 8px rgba(232, 138, 168, 0.4));
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.6) rotate(-8deg);
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-110vh) scale(1.1) rotate(12deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heart {
+    animation: fadeBrief 1.2s ease forwards;
+  }
+
+  @keyframes fadeBrief {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

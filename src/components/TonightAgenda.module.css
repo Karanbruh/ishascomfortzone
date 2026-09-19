@@ -1,0 +1,166 @@
+.section {
+  max-width: 32rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.75rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  min-height: 3.4rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  text-align: left;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.item:hover {
+  background: var(--glass-strong);
+  border-color: rgba(248, 212, 232, 0.3);
+}
+
+.item:active {
+  transform: scale(0.99);
+}
+
+.done {
+  border-color: rgba(232, 138, 168, 0.45);
+  background: rgba(232, 138, 168, 0.1);
+}
+
+.box {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 0.4rem;
+  border: 1.5px solid var(--lavender);
+  color: var(--rose);
+  font-size: 0.95rem;
+  line-height: 1;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.done .box {
+  border-color: var(--rose);
+  background: rgba(232, 138, 168, 0.25);
+  animation: pop 0.35s var(--ease-out);
+}
+
+.label {
+  flex: 1;
+  font-size: 1rem;
+  color: var(--cream);
+}
+
+.done .label {
+  color: var(--pink-soft);
+}
+
+.sparkle {
+  font-size: 0.95rem;
+  animation: spark 0.5s var(--ease-out);
+}
+
+.complete {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  color: var(--pink-soft);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  animation: riseIn 0.5s var(--ease-out);
+}
+
+.note {
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  text-align: center;
+}
+
+.noteLabel {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: var(--lavender);
+  margin-bottom: 0.5rem;
+}
+
+.noteMain {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--pink-soft);
+  margin-bottom: 1.15rem;
+}
+
+.noteBody {
+  font-size: 0.98rem;
+  color: var(--lavender-soft);
+  line-height: 1.7;
+  margin-bottom: 0.85rem;
+}
+
+.noteBody:last-child {
+  margin-bottom: 0;
+  color: var(--cream);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spark {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .done .box,
+  .sparkle,
+  .complete {
+    animation: none;
+  }
+}
