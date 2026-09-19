@@ -23,42 +23,31 @@ as much chocolate as my girl wants.
 no arguments.`,
   },
   {
-    id: 'warm',
-    emoji: '🫖',
-    label: 'something warm',
-    message: `something warm coming right up 🫖
-
-get cozy, baby.
-
-if i could physically hand it to you right now, i would.`,
+    id: 'head-pats',
+    emoji: '🫳',
+    label: 'head pats 🥺',
+    message: `come here baby, you deserve all the gentle head pats`,
   },
   {
-    id: 'movie',
-    emoji: '🎬',
-    label: 'movie + blanket',
-    message: `blanket + movie + me.
-
-honestly...
-
-sounds like the perfect plan. 🎬🧸`,
+    id: 'head-scratches',
+    emoji: '🫳',
+    label: 'head scratches 🤭',
+    message: `your favourite little scratches until you feel all cozy`,
   },
   {
-    id: 'massage',
-    emoji: '💆',
-    label: 'head massage',
-    message: `come here bubu.
-
-just lie down and let me take care of you for a little while. 🫂`,
+    id: 'waist-pets',
+    emoji: '🫂',
+    label: 'waist pets 🫂',
+    message: `come closer, baby. let me keep my hand around your waist`,
   },
   {
-    id: 'sleep',
-    emoji: '😴',
-    label: 'let me sleep',
-    message: `approved 😴
+    id: 'horror',
+    emoji: '👻',
+    label: 'horror movie night 👻',
+    message: `we watch horror movies together.
 
-sleep as much as you need, baby.
-
-i'll be right here when you wake up.`,
+a scary movie, you hiding behind me,
+and me pretending i'm not enjoying it 😭💗`,
   },
 ]
 
@@ -227,7 +216,7 @@ export const agendaItems = [
   { id: 'water', label: 'drink some water' },
   { id: 'comfortable', label: 'get comfortable' },
   { id: 'cozy', label: 'wear something cozy' },
-  { id: 'watch', label: 'watch something stupid with karan' },
+  { id: 'watch', label: 'watch a horror movie with karan' },
   { id: 'pamper', label: 'let boyfriend pamper you' },
   { id: 'sleep', label: 'sleep peacefully' },
 ]
