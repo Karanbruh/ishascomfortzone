@@ -1,0 +1,74 @@
+.layer {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.blocked {
+  visibility: hidden;
+}
+
+.starHit {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: auto;
+  background: transparent;
+}
+
+.starHit:disabled {
+  pointer-events: none;
+}
+
+.starHit:focus-visible {
+  outline: 2px solid var(--pink-soft);
+  outline-offset: 2px;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: max(1.25rem, env(safe-area-inset-bottom, 0px) + 1rem);
+  z-index: 40;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  width: min(calc(100% - 2rem), 22rem);
+  transform: translateX(-50%);
+  padding: 0.85rem 0.75rem 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  background:
+    linear-gradient(160deg, rgba(55, 35, 80, 0.96), rgba(30, 18, 52, 0.98));
+  border: 1px solid rgba(248, 212, 232, 0.22);
+  box-shadow: var(--shadow);
+  pointer-events: auto;
+}
+
+.toastText {
+  flex: 1;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--cream);
+  font-style: italic;
+}
+
+.toastClose {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: var(--lavender);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.toastClose:hover {
+  color: var(--cream);
+  background: rgba(255, 255, 255, 0.12);
+}

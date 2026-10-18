@@ -15,6 +15,7 @@ export default function FinalSection() {
       <p className={styles.line}>get cozy.</p>
       <p className={styles.remember}>and remember...</p>
       <p className={styles.big}>i love you isha 💗</p>
+      <p className={styles.warm}>i&apos;m so happy you came into my life.</p>
       <p className={styles.sign}>— karan</p>
     </section>
   )

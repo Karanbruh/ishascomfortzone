@@ -69,6 +69,16 @@
   white-space: pre-line;
 }
 
+.afterthought {
+  margin-top: 1.15rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(248, 212, 232, 0.16);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--lavender-soft);
+  font-style: italic;
+}
+
 .srOnly {
   position: absolute;
   width: 1px;

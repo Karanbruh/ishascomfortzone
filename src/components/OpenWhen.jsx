@@ -22,6 +22,7 @@ export default function OpenWhen() {
         open={Boolean(active)}
         title={active?.label ?? ''}
         message={active?.message ?? ''}
+        afterthought={active?.afterthought}
         onClose={() => setActive(null)}
         letter
       />

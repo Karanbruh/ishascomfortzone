@@ -40,6 +40,19 @@
     inset -10px -6px 20px rgba(180, 140, 100, 0.15);
 }
 
+.moon::before {
+  content: '';
+  position: absolute;
+  width: 5.5%;
+  height: 5.5%;
+  top: 46%;
+  left: 62%;
+  border-radius: 50%;
+  background: var(--brown-soft);
+  opacity: 0.5;
+  z-index: 1;
+}
+
 .moon::after {
   content: '';
   position: absolute;

@@ -2,7 +2,14 @@ import { useEffect, useId, useRef } from 'react'
 import { X } from 'lucide-react'
 import styles from './ComfortModal.module.css'
 
-export default function ComfortModal({ open, title, message, onClose, letter = false }) {
+export default function ComfortModal({
+  open,
+  title,
+  message,
+  onClose,
+  letter = false,
+  afterthought,
+}) {
   const titleId = useId()
   const closeRef = useRef(null)
 
@@ -59,6 +66,7 @@ export default function ComfortModal({ open, title, message, onClose, letter = f
           </span>
         )}
         <p className={styles.message}>{message}</p>
+        {afterthought ? <p className={styles.afterthought}>{afterthought}</p> : null}
       </div>
     </div>
   )

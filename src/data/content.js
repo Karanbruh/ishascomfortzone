@@ -157,6 +157,7 @@ one shitty day doesn't change how i see you.
 not even a little.
 
 — your boyfriend ❤️`,
+    afterthought: `and those brown eyes? they still get me every single time.`,
   },
   {
     id: 'attention',
@@ -190,6 +191,7 @@ and telling you:
 'i'm right here, baby.'
 
 because i am. ❤️`,
+    afterthought: `the way you look away all shy… then peek back. yeah. that undoes me.`,
   },
   {
     id: 'sleep',
@@ -219,4 +221,20 @@ export const agendaItems = [
   { id: 'watch', label: 'watch a horror movie with karan' },
   { id: 'pamper', label: 'let boyfriend pamper you' },
   { id: 'sleep', label: 'sleep peacefully' },
+]
+
+/** Tiny one-shot discoveries on three background stars (by star index). */
+export const starWhispers = [
+  {
+    starId: 0,
+    text: 'your brown eyes though… still my favourite thing to get lost in.',
+  },
+  {
+    starId: 8,
+    text: 'that tiny til on your left cheek? yeah. i notice. i adore it.',
+  },
+  {
+    starId: 27,
+    text: "i love watching you just be yourself. that's my favourite version of you.",
+  },
 ]
